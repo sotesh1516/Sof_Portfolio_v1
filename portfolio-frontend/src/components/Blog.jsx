@@ -1,28 +1,20 @@
 import React from 'react';
 
-function Home() {
+function Blog() {
   return (
     <div className="min-h-screen flex flex-col items-center px-6 py-12">
       {/* Navbar */}
       <nav className="w-full max-w-4xl flex justify-end space-x-6 text-sm text-gray-700">
         <a href="/" className="hover:underline">home</a>
         <a href="/projects" className="hover:underline">projects</a>
-        <a href="/blog" className="hover:underline">blog</a>
+        <a href="/blog" className="font-semibold underline">blog</a>
       </nav>
 
-      {/* Main Content */}
+      {/* Blog Content */}
       <main className="w-full max-w-2xl mt-20">
-        <h1 className="text-2xl font-bold mb-4">Hi, this is Sofoniyas</h1>
-        <p className="text-gray-700 leading-relaxed">
-          I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in Vim's
-          keystroke commands and tabs' flexibility for personal viewing preferences.
-          This extends to my support for static typing, where its early error detection
-          ensures cleaner code, and my preference for dark mode, which eases long coding
-          sessions by reducing eye strain.
-        </p>
+        <h1 className="text-2xl font-bold mb-8">Blog</h1>
 
-        {/* Blog Section */}
-        <div className="mt-10 space-y-3">
+        <div className="space-y-4">
           <div className="flex space-x-4 text-gray-600">
             <span className="w-32">April 9, 2024</span>
             <a href="#" className="hover:underline">
@@ -47,9 +39,9 @@ function Home() {
       {/* Footer */}
       <footer className="mt-auto py-10 text-sm text-gray-500">
         <div className="flex space-x-6 justify-center">
+          <a href="#" className="hover:underline">rss</a>
           <a href="#" className="hover:underline">linkedin</a>
-          <a href="#" className="hover:underline">github</a>
-          <a href="#" className="hover:underline">view source</a>
+          <a href="#" className="hover:underline">email</a>
         </div>
         <p className="mt-4">© 2024 MIT Licensed</p>
       </footer>
@@ -57,4 +49,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Blog;
